@@ -1,0 +1,12 @@
+name: First Workflow
+on: workflow_dispatch
+# "on:" defines the trigger when to run work flow "workflow_dispatch", says to run manually.
+jobs:
+  first-job: # first job to run under jobs, NOTE: The job name can be anything.
+    runs-on: ubuntu-latest
+    # runs-on specifiies where what github running to use to run the job.
+    steps:
+      - name: Print greeting
+        run: echo "Hello World"
+      - name: Print goodbye
+        run: echo "Done"
